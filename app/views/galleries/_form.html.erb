@@ -1,0 +1,5 @@
+<%= simple_form_for @gallery do |f| %>
+  <%= f.input :name, label: 'Naziv kategorije, molim vas.', error: 'Naziv kategorije je obavezan!' %>
+ 
+  <%= f.button :submit ,'Save' %>
+<% end %>

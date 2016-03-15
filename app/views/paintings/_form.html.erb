@@ -1,0 +1,6 @@
+<%= simple_form_for([@gallery, @gallery.paintings.build], :html => {:multipart => true}) do |f| %>
+	
+	<label>My Image</label>
+    <%= f.input :image %>
+	<%= f.button :submit, :class => 'btn-custom' %>
+<% end %>

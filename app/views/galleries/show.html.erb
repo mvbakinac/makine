@@ -1,0 +1,17 @@
+ Naziv kategorije: <h1><%=  @gallery.name %></h1>
+
+ <h3>Dodaj sliku</h3>
+
+ <%= render 'paintings/form' %>
+
+ <% for painting in @gallery.paintings %>
+			    
+			      <%= image_tag painting.image_url if painting.image? %>
+			      
+			    
+		<% end %>
+
+
+ <%= link_to "Edit", edit_gallery_path(@gallery) %>
+ <%= link_to "Delete", gallery_path(@gallery), method: :delete, data: {:confirm => "Da li ste sigurni?"} %>
+ <%= link_to "Nazad", root_path %>
