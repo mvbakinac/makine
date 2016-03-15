@@ -14,7 +14,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'monban', '~> 0.2.1'
 gem 'monban-generators'
 gem 'simple_form', '~> 3.1.0'
-
+gem 'carrierwave', '~> 0.10.0'
+#gem "mini_magick"
+gem 'rmagick', '~> 2.15', '>= 2.15.4'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
